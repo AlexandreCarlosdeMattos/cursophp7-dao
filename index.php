@@ -36,10 +36,17 @@ $aluno->insert();
 echo $aluno;
 */
 
-//Update de usuario
+/* //Update de usuario
 $usuario = new Usuario();
 $usuario->loadById(7);
 $usuario->update("rose", "287898");
 echo $usuario;
+*/
 
+//Deletar os dados do banco
+
+$usuario = new Usuario();
+$usuario->loadById(6);
+$usuario->delete();
+echo $usuario;
 ?>
